@@ -2,9 +2,10 @@ import React from "react";
 import { styled } from "../styles";
 
 const Button = styled('button', {
-  backgroundColor: '$rocketseat',
+  backgroundColor: '$green500',
   borderRadius: 8,
   padding: '1rem 2rem',
+  cursor: 'pointer',
 
   span: {
     fontWeight: 'bold'
