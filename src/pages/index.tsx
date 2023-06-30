@@ -1,26 +1,30 @@
 import React from "react";
-import { styled } from "../styles";
-
-const Button = styled('button', {
-  backgroundColor: '$green500',
-  borderRadius: 8,
-  padding: '1rem 2rem',
-  cursor: 'pointer',
-
-  span: {
-    fontWeight: 'bold'
-  },
-
-  '&:hover': {
-    filter: 'brightness(0.8)'
-  }
-})
+import Image from 'next/image'
+import { HomeContainer, Product } from "../styles/pages/home";
+import camiseta1 from '../assets/Tshirts/tshirtOne.png'
+import camiseta2 from '../assets/Tshirts/tshirtTwo.png'
+import camiseta3 from '../assets/Tshirts/tshirtThree.png'
 
 export default function Home() {
   return (
-    <Button>
-      Hello World!
-      <span>teste</span>
-    </Button>
+    <HomeContainer>
+      <Product>
+        <Image src={camiseta1} width={520} height={480} />
+
+        <footer>
+          <strong>Camiseta Mui Loka</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+
+      <Product>
+        <Image src={camiseta2} width={520} height={480} />
+
+        <footer>
+          <strong>Camiseta Mui Loka</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+    </HomeContainer>
   )
 }
