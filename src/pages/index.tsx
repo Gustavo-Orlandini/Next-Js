@@ -4,6 +4,7 @@ import { HomeContainer, Product } from "../styles/pages/home";
 import camiseta1 from '../assets/Tshirts/tshirtOne.png'
 import camiseta2 from '../assets/Tshirts/tshirtTwo.png'
 import camiseta3 from '../assets/Tshirts/tshirtThree.png'
+import camiseta4 from '../assets/Tshirts/tshirtFour.svg'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 
@@ -45,7 +46,7 @@ export default function Home() {
       </Product>
 
       <Product className="keen-slider__slide">
-        <Image src={camiseta1} width={520} height={380} alt="" />
+        <Image src={camiseta4} width={520} height={380} alt="" />
 
         <footer>
           <strong>Camiseta Mui Loka</strong>
